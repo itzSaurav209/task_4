@@ -1,0 +1,343 @@
+/* Reset and base styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #42e695, #3bb2b8);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+
+/* Gradient Animation */
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Bubble Background */
+
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles span {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 30%, transparent 70%);
+    border-radius: 50%;
+    bottom: -150px;
+    animation: moveUp 15s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
+}
+
+
+/* Different colors and speeds for variety */
+
+.bubbles span:nth-child(1) {
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    background: #ffb6c1;
+}
+
+.bubbles span:nth-child(2) {
+    left: 15%;
+    width: 35px;
+    height: 35px;
+    animation-duration: 16s;
+    animation-delay: 2s;
+    background: #ffd700;
+}
+
+.bubbles span:nth-child(3) {
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 18s;
+    animation-delay: 4s;
+    background: #87cefa;
+}
+
+.bubbles span:nth-child(4) {
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    background: #98fb98;
+}
+
+.bubbles span:nth-child(5) {
+    left: 55%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    background: #ffa07a;
+}
+
+.bubbles span:nth-child(6) {
+    left: 70%;
+    width: 18px;
+    height: 18px;
+    animation-duration: 13s;
+    animation-delay: 5s;
+    background: #00ced1;
+}
+
+.bubbles span:nth-child(7) {
+    left: 80%;
+    width: 45px;
+    height: 45px;
+    animation-duration: 22s;
+    animation-delay: 2s;
+    background: #dda0dd;
+}
+
+.bubbles span:nth-child(8) {
+    left: 90%;
+    width: 28px;
+    height: 28px;
+    animation-duration: 14s;
+    animation-delay: 4s;
+    background: #ff69b4;
+}
+
+.bubbles span:nth-child(9) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 19s;
+    animation-delay: 1s;
+    background: #7fffd4;
+}
+
+.bubbles span:nth-child(10) {
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 17s;
+    animation-delay: 3s;
+    background: #f5deb3;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffe066;
+    transform: scale(1.1);
+}
+
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+    animation: fadeIn 1.2s ease-in;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+
+/* Template Cards */
+
+.template-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.template-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 5s ease-in-out infinite;
+}
+
+.template-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
+}
+
+.template-image {
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.template-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.template-card:hover .template-image img {
+    transform: scale(1.1);
+}
+
+.template-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.template-subtitle {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.template-card:hover .template-subtitle {
+    color: #ffe066;
+}
+
+.template-lines .line {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+    transition: background 0.3s ease;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .contact {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer .contact a {
+    color: #ffeb99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .contact a:hover {
+    color: #fff;
+}
+
+footer .rights {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

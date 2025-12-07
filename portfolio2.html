@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Alexander Aronowitz - Portfolio 2023</title>
+    <link rel="stylesheet" href="portfolio2.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <!-- Action buttons -->
+        <div class="action-buttons" aria-hidden="false">
+            <button id="editBtn" class="action-btn">✏️ Edit</button>
+            <button id="downloadBtn" class="action-btn">⬇️ Download</button>
+            <input id="imgInput" type="file" accept="image/*" style="display:none" />
+        </div>
+
+        <div class="nav-left">
+            <div class="nav-brand">ALEXANDER ARONOWITZ</div>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">ONLINE PORTFOLIO</a></li>
+            <li><a href="#about" class="nav-link">ABOUT ME</a></li>
+            <li><a href="#education" class="nav-link">EDUCATION</a></li>
+            <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+            <li><a href="#project" class="nav-link">PROJECT</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <div class="progress-bar" aria-hidden="true">
+            <div class="progress-fill"></div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="section home-section">
+        <div class="container grid-2">
+            <div class="home-content">
+                <p class="greeting editable" data-editable>Hello !!!</p>
+                <h1 class="main-title editable" data-editable>I'm Alexander<br />Aronowitz</h1>
+                <div class="job-title editable" data-editable>PROFESSIONAL CONTENT CREATOR</div>
+                <p class="description editable" data-editable>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet massa sed leo molestie ultrices in non mi. Suspendisse mollis nisl ac aliquet pretium.
+                </p>
+            </div>
+
+            <div class="home-image">
+                <div class="portrait-wrapper">
+                    <img id="homeProfile" class="portrait" src="myphoto.jpg.jpg" alt="Profile photo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="year-label">PORTFOLIO 2023</div>
+        <div class="decorative-line"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <div class="container grid-2">
+            <div class="about-image">
+                <div class="portrait-wrapper about-portrait">
+                    <img id="aboutProfile" class="portrait" src="myphoto.jpg.jpg" alt="Profile photo" />
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h2 class="section-title editable" data-editable>MY BIOGRAPHY</h2>
+                <div class="title-underline"></div>
+                <p class="bio-text editable" data-editable>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet massa sed leo molestie ultrices in non mi. Suspendisse mollis nisl ac aliquet pretium.
+                </p>
+                <p class="bio-text editable" data-editable>
+                    Aliquam luctus faucibus augue, in porttitor eros imperdiet sit amet.
+                </p>
+
+                <h3 class="skills-title editable" data-editable>Skill & Interest</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag editable" data-editable>SOCIAL MEDIA</span>
+                    <span class="skill-tag editable" data-editable>DESIGN</span>
+                    <span class="skill-tag editable" data-editable>READING</span>
+                    <span class="skill-tag editable" data-editable>DATA ANALYST</span>
+                    <span class="skill-tag editable" data-editable>PHOTOGRAPHY</span>
+                </div>
+            </div>
+        </div>
+        <div class="year-label">PORTFOLIO 2023</div>
+        <div class="decorative-line"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title editable" data-editable>EDUCATION</h2>
+            <div class="title-underline"></div>
+            <p class="section-description editable" data-editable>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="timeline-year">2012 - 2019</div>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3 class="editable" data-editable>Senior Vocational High School</h3>
+                    <p class="editable" data-editable>School Of Art | 2012</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="editable" data-editable>Bachelor Degree</h3>
+                    <p class="editable" data-editable>Borcelle Art University | Graphic Design Bachelor | 2017</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="editable" data-editable>Master Degree</h3>
+                    <p class="editable" data-editable>Borcelle Art University | Master of Communication | 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="year-label">PORTFOLIO 2023</div>
+        <div class="decorative-line"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title editable" data-editable>EXPERIENCE</h2>
+            <div class="title-underline"></div>
+            <div class="timeline-year">2021 - 2023</div>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3 class="editable" data-editable>Arrowai Industries</h3>
+                    <p class="editable" data-editable>Head Content Creator 2022 - 2023</p>
+                    <p class="editable" data-editable>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="editable" data-editable>Borcelle</h3>
+                    <p class="editable" data-editable>Junior Content Creator 2021 - 2022</p>
+                    <p class="editable" data-editable>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="year-label">PORTFOLIO 2023</div>
+        <div class="decorative-line"></div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project" class="section project-section">
+        <div class="container">
+            <h2 class="section-title editable" data-editable>SELECTED PROJECT</h2>
+            <div class="title-underline"></div>
+
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('mediconnect.jpg.png');"></div>
+                    <h3 class="editable" data-editable>Mediconnect | 2025</h3>
+                    <p class="editable" data-editable>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Rozgaarsetu.jpg.png');"></div>
+                    <h3 class="editable" data-editable>Rozgraat Setu| 2024</h3>
+                    <p class="editable" data-editable>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-label">PORTFOLIO 2023</div>
+        <div class="decorative-line"></div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title editable" data-editable>GET IN TOUCH</h2>
+            <p class="section-subtitle editable" data-editable>Let's Work Together</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 class="editable" data-editable>Phone & Mobile</h3>
+                    <p class="editable" data-editable>123-456-7890</p>
+                    <p class="editable" data-editable>+123-456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="editable" data-editable>Email & Website</h3>
+                    <p class="editable" data-editable>hello@reallygreatsite.com</p>
+                    <p class="editable" data-editable>reallygreatsite.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="editable" data-editable>Address</h3>
+                    <p class="editable" data-editable>123 Anywhere St., Any City, ST 12345</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="editable" data-editable>Social Media</h3>
+                    <p class="editable" data-editable>@reallygreatsite</p>
+                </div>
+            </div>
+            <div class="footer-name editable" data-editable>ALEXANDER ARONOWITZ</div>
+        </div>
+    </section>
+
+    <!-- external html2pdf (bundle has html2canvas + jsPDF) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="portfolio2.js"></script>
+</body>
+
+</html>

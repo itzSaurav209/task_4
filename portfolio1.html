@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Stylish Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="portfolio1.css" />
+</head>
+
+<body>
+
+    <!-- ===== EDIT / DOWNLOAD BUTTONS ===== -->
+    <div class="edit-toolbar">
+        <button id="editBtn" class="btn">✏️ Edit</button>
+        <button id="saveBtn" class="btn" style="display:none;">💾 Save</button>
+        <button id="downloadBtn" class="btn">⬇️ Download</button>
+    </div>
+
+    <!-- ===== FLOATING PHOTO SECTION ===== -->
+    <div class="photo-container">
+        <img id="profilePhoto" src="aa.png" alt="Profile Photo">
+        <input type="file" id="photoUpload" accept="image/*" style="display:none;">
+        <button id="changePhotoBtn" class="btn small-btn">📸 Add your photo</button>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== INTRO ===== -->
+    <section id="introduction" class="section intro-section">
+        <div class="floating-circle floating1"></div>
+        <div class="floating-circle floating2"></div>
+        <div class="content editable-section" contenteditable="false">
+            <h2>Hi, I’m Saurav Shukla 👋</h2>
+            <p>Welcome to my creative portfolio! I’m a passionate web developer who loves crafting elegant designs, interactive experiences, and smart solutions for real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section">
+        <div class="floating-circle floating1"></div>
+        <div class="floating-circle floating2"></div>
+        <div class="content editable-section" contenteditable="false">
+            <h2>About Me</h2>
+            <p>I'm a B.Tech CSE student with a focus on Web Development and Artificial Intelligence. I enjoy turning ideas into reality through code, design, and innovation. Learning new technologies and solving challenges is what keeps me going every day.</p>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills-section">
+        <div class="floating-circle floating1"></div>
+        <div class="floating-circle floating2"></div>
+        <div class="content editable-section" contenteditable="false">
+            <h2>My Skills</h2>
+            <ul style="list-style:none;">
+                <li>💻 HTML, CSS, JavaScript</li>
+                <li>⚙️ Java, Python, SQL</li>
+                <li>🌐 React.js, Node.js (Basics)</li>
+                <li>🧠 Machine Learning & Data Analytics</li>
+                <li>🎨 UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="floating-circle floating1"></div>
+        <div class="floating-circle floating2"></div>
+        <div class="content editable-section" contenteditable="false">
+            <h2>My Projects</h2>
+            <div class="portfolio-items">
+                <div class="item">
+                    <h3>RozgaarSetu</h3>
+                    <p>A web platform designed to connect daily wage workers with employers, providing stable work opportunities.</p>
+                </div>
+                <div class="item">
+                    <h3>Personal Portfolio</h3>
+                    <p>A creative personal website showcasing my skills, projects, and contact information — with smooth animations and modern UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section conclusion-section">
+        <div class="floating-circle floating1"></div>
+        <div class="floating-circle floating2"></div>
+        <div class="content editable-section" contenteditable="false">
+            <h2>Let’s Connect</h2>
+            <p>📧 Email: sauravshukla@example.com</p>
+            <p>🌍 LinkedIn: linkedin.com/in/sauravshukla</p>
+            <p>💬 “Code is not just my work, it’s my art.”</p>
+        </div>
+    </section>
+
+    <script src="portfolio1.js"></script>
+</body>
+
+</html>
